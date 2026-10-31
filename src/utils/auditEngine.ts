@@ -44,13 +44,38 @@ export function auditQuote(
 
   // Detect overlapping labor: e.g., Alternator + Serpentine belt
   if (activeServiceIds.has('alternator_replacement') && activeServiceIds.has('serpentine_belt')) {
+    const beltItem = items.find((i) => i.serviceId === 'serpentine_belt');
+    const overlapLabor = beltItem ? beltItem.quotedLaborPrice : 70;
+    upsellFlags.push({
+      id: 'labor_overlap_alternator_belt',
+      serviceName: 'Serpentine Belt Replacement',
+      severity: 'high',
+      title: 'Overlapping Labor Charge: Alternator & Serpentine Belt',
+      description:
+        'The serpentine drive belt must be completely loosened and unrouted to access and replace the alternator. Billing full standalone labor for both items is redundant double-dipping.',
+      recommendation:
+        'Request removal or 80% reduction of the serpentine belt labor line because access was already required for the alternator.',
+      quotedAmount: overlapLabor,
+    });
     negotiationPoints.push(
       'Labor Overlap: The serpentine belt must be completely unbolted and removed to replace the alternator. Do NOT pay full standalone labor for serpentine belt replacement.'
     );
   }
 
-  // Detect overlapping labor: e.g., Water pump + Thermostat
+  // Detect overlapping labor: e.g., Water pump + Coolant flush
   if (activeServiceIds.has('water_pump_thermostat') && activeServiceIds.has('coolant_flush')) {
+    const flushItem = items.find((i) => i.serviceId === 'coolant_flush');
+    const overlapAmount = flushItem ? flushItem.quotedLaborPrice + flushItem.quotedPartsPrice : 120;
+    upsellFlags.push({
+      id: 'labor_overlap_water_pump_flush',
+      serviceName: 'Engine Coolant Flush',
+      severity: 'high',
+      title: 'Redundant Fluid Charge: Water Pump & Coolant Flush',
+      description:
+        'Replacing the water pump already requires fully draining and refilling the engine cooling system. Billing a separate "Coolant Flush" is duplicative.',
+      recommendation: 'Remove the separate coolant flush charge from the work order.',
+      quotedAmount: overlapAmount,
+    });
     negotiationPoints.push(
       'Labor Overlap: Replacing the water pump already requires draining and refilling the entire cooling system. You should not be billed for a separate "Coolant Flush" service.'
     );
@@ -179,15 +204,17 @@ export function auditQuote(
   let status: 'fair' | 'slightly_high' | 'overcharged' | 'egregious' = 'fair';
   let statusLabel = 'Fair & Honest Estimate';
 
-  const criticalOrHighUpsellsCount = upsellFlags.filter((f) => f.severity === 'critical' || f.severity === 'high').length;
+  const criticalUpsellsCount = upsellFlags.filter((f) => f.severity === 'critical').length;
+  const highUpsellsCount = upsellFlags.filter((f) => f.severity === 'high').length;
+  const totalAlertsCount = criticalUpsellsCount + highUpsellsCount;
 
-  if (variancePercentage > 60 || criticalOrHighUpsellsCount >= 4) {
+  if (variancePercentage > 60 || totalAlertsCount >= 4) {
     status = 'egregious';
     statusLabel = 'Severely Inflated / Egregious Markup';
-  } else if (variancePercentage > 25 || criticalOrHighUpsellsCount >= 2) {
+  } else if (variancePercentage > 25 || totalAlertsCount >= 2 || criticalUpsellsCount >= 1) {
     status = 'overcharged';
     statusLabel = 'Overcharged / Multiple High Markups Detected';
-  } else if (variancePercentage > 10 || criticalOrHighUpsellsCount === 1) {
+  } else if (variancePercentage > 10 || totalAlertsCount === 1) {
     status = 'slightly_high';
     statusLabel = 'Slightly Above Average Market Rate';
   }

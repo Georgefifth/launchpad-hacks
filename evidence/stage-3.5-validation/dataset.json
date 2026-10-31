@@ -1,0 +1,289 @@
+[
+  {
+    "id": "CASE-01",
+    "tier": "basic",
+    "title": "Standard Synthetic Oil Change & Filter",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/jksx88/is_650_a_reasonable_price_for_brake_padsrotors",
+    "vehicle": { "year": 2017, "make": "Honda", "model": "Civic", "mileage": 45000 },
+    "laborRate": 120,
+    "shopSuppliesFee": 10,
+    "items": [
+      { "serviceId": "oil_change_synthetic", "serviceName": "Full Synthetic Oil Change & Filter", "quotedPartsPrice": 42, "quotedLaborPrice": 40 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Honest independent oil change. Should never trigger false upsell alarms."
+    }
+  },
+  {
+    "id": "CASE-02",
+    "tier": "basic",
+    "title": "Front Brake Pads & Rotors at Independent Shop",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/uru5ck/got_quoted_around_400_for_full_back_break_job_is",
+    "vehicle": { "year": 2016, "make": "Toyota", "model": "Corolla", "mileage": 70000 },
+    "laborRate": 130,
+    "shopSuppliesFee": 20,
+    "items": [
+      { "serviceId": "front_brake_pads_rotors", "serviceName": "Front Brake Pads & Rotors Replacement", "quotedPartsPrice": 160, "quotedLaborPrice": 220 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair", "slightly_high"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Standard 1.7hr book time brake job at fair market labor rate."
+    }
+  },
+  {
+    "id": "CASE-03",
+    "tier": "basic",
+    "title": "Battery Replacement at Independent Shop",
+    "source": "https://reddit.com/r/cars/comments/6aqy99/how_do_the_diyers_here_keep_track_of_maintenance",
+    "vehicle": { "year": 2015, "make": "Ford", "model": "Fusion", "mileage": 85000 },
+    "laborRate": 120,
+    "shopSuppliesFee": 12,
+    "items": [
+      { "serviceId": "car_battery_replacement", "serviceName": "12V Car Battery Replacement & Registration", "quotedPartsPrice": 150, "quotedLaborPrice": 40 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Fair battery replacement with 0.3hr labor."
+    }
+  },
+  {
+    "id": "CASE-04",
+    "tier": "intermediate",
+    "title": "Brake Service + $95 Cabin Air Filter Upsell",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/1f1skdw/first_time_replacing_brakes_is_this_cost_standard",
+    "vehicle": { "year": 2018, "make": "Nissan", "model": "Rogue", "mileage": 52000 },
+    "laborRate": 140,
+    "shopSuppliesFee": 25,
+    "items": [
+      { "serviceId": "front_brake_pads_rotors", "serviceName": "Front Brake Pads & Rotors Replacement", "quotedPartsPrice": 180, "quotedLaborPrice": 240 },
+      { "serviceId": "cabin_air_filter", "serviceName": "Cabin Air Filter Replacement", "quotedPartsPrice": 50, "quotedLaborPrice": 45 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["slightly_high", "overcharged"],
+      "expectedUpsellsMin": 1,
+      "expectedUpsellsMax": 1,
+      "notes": "Must detect cabin air filter as #1 profit-center markup and recommend DIY alternative."
+    }
+  },
+  {
+    "id": "CASE-05",
+    "tier": "intermediate",
+    "title": "60k Maintenance with Dual Chemical Flushes",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/10ux2xr/dealer_recommended_services_to_me_worth_it",
+    "vehicle": { "year": 2019, "make": "Subaru", "model": "Forester", "mileage": 60000 },
+    "laborRate": 145,
+    "shopSuppliesFee": 30,
+    "items": [
+      { "serviceId": "oil_change_synthetic", "serviceName": "Full Synthetic Oil Change & Filter", "quotedPartsPrice": 45, "quotedLaborPrice": 45 },
+      { "serviceId": "transmission_flush", "serviceName": "Automatic / CVT Transmission Fluid Flush", "quotedPartsPrice": 110, "quotedLaborPrice": 180 },
+      { "serviceId": "fuel_induction_service", "serviceName": "Fuel Induction / Throttle Body 'Decarbonizing' Flush", "quotedPartsPrice": 40, "quotedLaborPrice": 160 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["overcharged", "egregious"],
+      "expectedUpsellsMin": 2,
+      "expectedUpsellsMax": 2,
+      "notes": "Must flag non-OEM transmission machine flush and unneeded fuel induction cleaning."
+    }
+  },
+  {
+    "id": "CASE-06",
+    "tier": "intermediate",
+    "title": "Front Strut Assemblies Replacement at Independent Shop",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/1pdfakd/2400_estimate_what_can_i_repair_myself",
+    "vehicle": { "year": 2014, "make": "Honda", "model": "CR-V", "mileage": 115000 },
+    "laborRate": 130,
+    "shopSuppliesFee": 28,
+    "items": [
+      { "serviceId": "struts_shocks_front_pair", "serviceName": "Front Strut Assemblies Replacement (Pair)", "quotedPartsPrice": 380, "quotedLaborPrice": 340 },
+      { "serviceId": "wheel_alignment", "serviceName": "Four-Wheel Alignment", "quotedPartsPrice": 0, "quotedLaborPrice": 120 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair", "slightly_high"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 1,
+      "notes": "Alignment is legitimately required after replacing strut assemblies."
+    }
+  },
+  {
+    "id": "CASE-07",
+    "tier": "advanced",
+    "title": "Dealership 60,000-Mile 'Wallet Flush' Package ($1,210)",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/qa4pn4/900_for_this_work_order_at_brake_check_brake_job",
+    "vehicle": { "year": 2018, "make": "Honda", "model": "Civic EX", "mileage": 62000 },
+    "laborRate": 165,
+    "shopSuppliesFee": 65,
+    "items": [
+      { "serviceId": "oil_change_synthetic", "serviceName": "Full Synthetic Oil Change & Filter", "quotedPartsPrice": 55, "quotedLaborPrice": 45 },
+      { "serviceId": "cabin_air_filter", "serviceName": "Cabin Air Filter Replacement", "quotedPartsPrice": 48, "quotedLaborPrice": 45 },
+      { "serviceId": "engine_air_filter", "serviceName": "Engine Air Filter Replacement", "quotedPartsPrice": 52, "quotedLaborPrice": 40 },
+      { "serviceId": "fuel_induction_service", "serviceName": "Fuel Induction / Throttle Body 'Decarbonizing' Flush", "quotedPartsPrice": 45, "quotedLaborPrice": 165 },
+      { "serviceId": "transmission_flush", "serviceName": "Automatic / CVT Transmission Fluid Flush", "quotedPartsPrice": 120, "quotedLaborPrice": 220 },
+      { "serviceId": "brake_fluid_flush", "serviceName": "Brake Fluid Flush / Exchange", "quotedPartsPrice": 40, "quotedLaborPrice": 140 },
+      { "serviceId": "wheel_alignment", "serviceName": "Four-Wheel Alignment", "quotedPartsPrice": 0, "quotedLaborPrice": 140 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["egregious"],
+      "expectedUpsellsMin": 5,
+      "expectedUpsellsMax": 7,
+      "notes": "Classic dealer multi-flush trap with excessive $65 shop fee and multiple profit flushes."
+    }
+  },
+  {
+    "id": "CASE-08",
+    "tier": "advanced",
+    "title": "Alternator Markup + Serpentine Belt Labor Overlap Double-Dip",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/sp6woa/quote_for_2500_in_la_area_mechanic_for_an_older",
+    "vehicle": { "year": 2014, "make": "Ford", "model": "Focus SE", "mileage": 104000 },
+    "laborRate": 145,
+    "shopSuppliesFee": 35,
+    "items": [
+      { "serviceId": "alternator_replacement", "serviceName": "Alternator Replacement", "quotedPartsPrice": 460, "quotedLaborPrice": 240 },
+      { "serviceId": "serpentine_belt", "serviceName": "Serpentine Accessory Drive Belt Replacement", "quotedPartsPrice": 55, "quotedLaborPrice": 70 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["slightly_high", "overcharged", "egregious"],
+      "expectedUpsellsMin": 1,
+      "expectedUpsellsMax": 2,
+      "mustHaveNegotiationText": "Labor Overlap",
+      "notes": "Must detect overlapping labor since serpentine belt must be unbolted to reach alternator."
+    }
+  },
+  {
+    "id": "CASE-09",
+    "tier": "advanced",
+    "title": "$249 Dealership Premature Fuel Injector Cleaning at 18k Miles",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/1rq2pcu/249_for_a_fuel_injection_cleaning",
+    "vehicle": { "year": 2024, "make": "Subaru", "model": "Crosstrek", "mileage": 18000 },
+    "laborRate": 160,
+    "shopSuppliesFee": 20,
+    "items": [
+      { "serviceId": "oil_change_synthetic", "serviceName": "Full Synthetic Oil Change & Filter", "quotedPartsPrice": 50, "quotedLaborPrice": 45 },
+      { "serviceId": "fuel_induction_service", "serviceName": "Fuel Induction / Throttle Body 'Decarbonizing' Flush", "quotedPartsPrice": 49, "quotedLaborPrice": 200 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["slightly_high", "overcharged", "egregious"],
+      "expectedUpsellsMin": 1,
+      "expectedUpsellsMax": 2,
+      "notes": "At 18k miles on a 2024 car, a $249 fuel induction service is 100% pure profit markup."
+    }
+  },
+  {
+    "id": "CASE-10",
+    "tier": "edge",
+    "title": "Zero-Cost Courtesy Inspection with Battery Replacement",
+    "source": "https://reddit.com/r/cars/comments/1b0r95s/singlepage_per_event_car_maintenance_log",
+    "vehicle": { "year": 2016, "make": "Mazda", "model": "3", "mileage": 68000 },
+    "laborRate": 120,
+    "shopSuppliesFee": 0,
+    "items": [
+      { "serviceId": "car_battery_replacement", "serviceName": "12V Car Battery Replacement & Registration", "quotedPartsPrice": 160, "quotedLaborPrice": 30 },
+      { "serviceName": "Multi-Point Courtesy Inspection", "quotedPartsPrice": 0, "quotedLaborPrice": 0 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Must handle $0 line items gracefully without division by zero or NaN."
+    }
+  },
+  {
+    "id": "CASE-11",
+    "tier": "edge",
+    "title": "Unlisted Custom Bumper Bracket Fabrication & Welding",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/1tzidlk/why_do_these_obd_reader_products_have_such",
+    "vehicle": { "year": 2011, "make": "Jeep", "model": "Wrangler", "mileage": 140000 },
+    "laborRate": 130,
+    "shopSuppliesFee": 40,
+    "items": [
+      { "serviceName": "Custom Front Frame Horn Reinforcement Bracket Weld", "quotedPartsPrice": 180, "quotedLaborPrice": 320 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair", "slightly_high"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Custom unlisted service must not crash and calculate proportional fallback range."
+    }
+  },
+  {
+    "id": "CASE-12",
+    "tier": "edge",
+    "title": "Astronomical $95 Shop Supplies Fee on Modest Brake Job",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/1v5sc2v/70_in_added_fees_for_oil_change_and_rear_brakes",
+    "vehicle": { "year": 2015, "make": "Hyundai", "model": "Sonata", "mileage": 82000 },
+    "laborRate": 135,
+    "shopSuppliesFee": 95,
+    "items": [
+      { "serviceId": "rear_brake_pads_rotors", "serviceName": "Rear Brake Pads & Rotors Replacement", "quotedPartsPrice": 150, "quotedLaborPrice": 210 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["slightly_high", "overcharged"],
+      "expectedUpsellsMin": 1,
+      "expectedUpsellsMax": 1,
+      "mustHaveNegotiationText": "Shop Supplies",
+      "notes": "Shop fee of $95 is exorbitant and must be flagged as excessive shop fee."
+    }
+  },
+  {
+    "id": "CASE-13",
+    "tier": "negative",
+    "title": "Fair & Honest Independent Mom-and-Pop 100k Maintenance",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/m7dk6j/how_do_you_track_your_cars_maintenance",
+    "vehicle": { "year": 2015, "make": "Subaru", "model": "Outback", "mileage": 102000 },
+    "laborRate": 120,
+    "shopSuppliesFee": 18,
+    "items": [
+      { "serviceId": "spark_plugs_4cyl", "serviceName": "Spark Plugs Replacement (4-Cylinder)", "quotedPartsPrice": 58, "quotedLaborPrice": 120 },
+      { "serviceId": "oil_change_synthetic", "serviceName": "Full Synthetic Oil Change & Filter", "quotedPartsPrice": 38, "quotedLaborPrice": 35 },
+      { "serviceId": "serpentine_belt", "serviceName": "Serpentine Accessory Drive Belt Replacement", "quotedPartsPrice": 35, "quotedLaborPrice": 60 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Negative test: An honest shop MUST NOT be falsely flagged as overcharged or rip-off."
+    }
+  },
+  {
+    "id": "CASE-14",
+    "tier": "adversarial",
+    "title": "Luxury European Dealership High Labor Rate ($220/hr)",
+    "source": "https://reddit.com/r/cars/comments/11b9kuo/why_does_reading_onboard_diagnostics_data_still",
+    "vehicle": { "year": 2020, "make": "BMW", "model": "330i", "mileage": 38000 },
+    "laborRate": 220,
+    "shopSuppliesFee": 40,
+    "items": [
+      { "serviceId": "front_brake_pads_rotors", "serviceName": "Front Brake Pads & Rotors Replacement", "quotedPartsPrice": 310, "quotedLaborPrice": 380 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["fair", "slightly_high"],
+      "expectedUpsellsMin": 0,
+      "expectedUpsellsMax": 0,
+      "notes": "Adversarial: Must properly scale with user-specified $220/hr regional dealership labor baseline."
+    }
+  },
+  {
+    "id": "CASE-15",
+    "tier": "adversarial",
+    "title": "Power Steering Flush on Vehicle with Electric Power Steering (EPS)",
+    "source": "https://reddit.com/r/MechanicAdvice/comments/19aikss/am_i_being_ripped_off_service_quote",
+    "vehicle": { "year": 2018, "make": "Honda", "model": "Civic", "mileage": 60000 },
+    "laborRate": 150,
+    "shopSuppliesFee": 20,
+    "items": [
+      { "serviceId": "power_steering_flush", "serviceName": "Power Steering Fluid Flush", "quotedPartsPrice": 35, "quotedLaborPrice": 120 }
+    ],
+    "groundTruth": {
+      "expectedStatus": ["overcharged", "egregious"],
+      "expectedUpsellsMin": 1,
+      "expectedUpsellsMax": 1,
+      "notes": "Adversarial scam test: Civic has electric power steering (EPS). Must trigger CRITICAL alert."
+    }
+  }
+]

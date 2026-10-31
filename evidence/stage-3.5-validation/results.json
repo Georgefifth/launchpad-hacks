@@ -1,0 +1,268 @@
+{
+  "timestamp": "2026-10-31T05:55:39.669Z",
+  "verdict": "PASS",
+  "metrics": {
+    "totalCases": 15,
+    "passCount": 15,
+    "failCount": 0,
+    "accuracyPercentage": 100,
+    "upsellPrecision": 87.5,
+    "upsellRecall": 100,
+    "confusionMatrix": {
+      "truePositives": 7,
+      "falsePositives": 1,
+      "trueNegatives": 7,
+      "falseNegatives": 0
+    }
+  },
+  "results": [
+    {
+      "id": "CASE-01",
+      "tier": "basic",
+      "title": "Standard Synthetic Oil Change & Filter",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/jksx88/is_650_a_reasonable_price_for_brake_padsrotors",
+      "passed": true,
+      "elapsedMs": 0.207,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 92,
+      "totalFairMax": 149,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-02",
+      "tier": "basic",
+      "title": "Front Brake Pads & Rotors at Independent Shop",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/uru5ck/got_quoted_around_400_for_full_back_break_job_is",
+      "passed": true,
+      "elapsedMs": 0.018,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 400,
+      "totalFairMax": 580,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-03",
+      "tier": "basic",
+      "title": "Battery Replacement at Independent Shop",
+      "source": "https://reddit.com/r/cars/comments/6aqy99/how_do_the_diyers_here_keep_track_of_maintenance",
+      "passed": true,
+      "elapsedMs": 0.018,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 202,
+      "totalFairMax": 350,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-04",
+      "tier": "intermediate",
+      "title": "Brake Service + $95 Cabin Air Filter Upsell",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/1f1skdw/first_time_replacing_brakes_is_this_cost_standard",
+      "passed": true,
+      "elapsedMs": 0.045,
+      "failures": [],
+      "actualStatus": "slightly_high",
+      "totalQuoted": 540,
+      "totalFairMax": 687,
+      "potentialSavings": 95,
+      "upsellCount": 1,
+      "upsellTitles": [
+        "Potential Non-Essential Upsell: Cabin Air Filter Replacement"
+      ]
+    },
+    {
+      "id": "CASE-05",
+      "tier": "intermediate",
+      "title": "60k Maintenance with Dual Chemical Flushes",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/10ux2xr/dealer_recommended_services_to_me_worth_it",
+      "passed": true,
+      "elapsedMs": 0.029,
+      "failures": [],
+      "actualStatus": "overcharged",
+      "totalQuoted": 610,
+      "totalFairMax": 691,
+      "potentialSavings": 490,
+      "upsellCount": 2,
+      "upsellTitles": [
+        "Potential Non-Essential Upsell: Automatic / CVT Transmission Fluid Flush",
+        "Potential Non-Essential Upsell: Fuel Induction / Throttle Body \"Decarbonizing\" Flush"
+      ]
+    },
+    {
+      "id": "CASE-06",
+      "tier": "intermediate",
+      "title": "Front Strut Assemblies Replacement at Independent Shop",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/1pdfakd/2400_estimate_what_can_i_repair_myself",
+      "passed": true,
+      "elapsedMs": 0.06,
+      "failures": [],
+      "actualStatus": "slightly_high",
+      "totalQuoted": 868,
+      "totalFairMax": 1326,
+      "potentialSavings": 120,
+      "upsellCount": 1,
+      "upsellTitles": [
+        "Potential Non-Essential Upsell: Four-Wheel Alignment"
+      ]
+    },
+    {
+      "id": "CASE-07",
+      "tier": "advanced",
+      "title": "Dealership 60,000-Mile 'Wallet Flush' Package ($1,210)",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/qa4pn4/900_for_this_work_order_at_brake_check_brake_job",
+      "passed": true,
+      "elapsedMs": 0.036,
+      "failures": [],
+      "actualStatus": "egregious",
+      "totalQuoted": 1220,
+      "totalFairMax": 1386,
+      "potentialSavings": 1055,
+      "upsellCount": 7,
+      "upsellTitles": [
+        "Excessive Miscellaneous Shop Fee",
+        "Potential Non-Essential Upsell: Cabin Air Filter Replacement",
+        "Potential Non-Essential Upsell: Engine Air Filter Replacement",
+        "Potential Non-Essential Upsell: Fuel Induction / Throttle Body \"Decarbonizing\" Flush",
+        "Potential Non-Essential Upsell: Automatic / CVT Transmission Fluid Flush",
+        "Potential Non-Essential Upsell: Brake Fluid Flush / Exchange",
+        "Potential Non-Essential Upsell: Four-Wheel Alignment"
+      ]
+    },
+    {
+      "id": "CASE-08",
+      "tier": "advanced",
+      "title": "Alternator Markup + Serpentine Belt Labor Overlap Double-Dip",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/sp6woa/quote_for_2500_in_la_area_mechanic_for_an_older",
+      "passed": true,
+      "elapsedMs": 0.022,
+      "failures": [],
+      "actualStatus": "slightly_high",
+      "totalQuoted": 860,
+      "totalFairMax": 961,
+      "potentialSavings": 70,
+      "upsellCount": 1,
+      "upsellTitles": [
+        "Overlapping Labor Charge: Alternator & Serpentine Belt"
+      ]
+    },
+    {
+      "id": "CASE-09",
+      "tier": "advanced",
+      "title": "$249 Dealership Premature Fuel Injector Cleaning at 18k Miles",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/1rq2pcu/249_for_a_fuel_injection_cleaning",
+      "passed": true,
+      "elapsedMs": 0.046,
+      "failures": [],
+      "actualStatus": "slightly_high",
+      "totalQuoted": 364,
+      "totalFairMax": 345,
+      "potentialSavings": 268,
+      "upsellCount": 1,
+      "upsellTitles": [
+        "Potential Non-Essential Upsell: Fuel Induction / Throttle Body \"Decarbonizing\" Flush"
+      ]
+    },
+    {
+      "id": "CASE-10",
+      "tier": "edge",
+      "title": "Zero-Cost Courtesy Inspection with Battery Replacement",
+      "source": "https://reddit.com/r/cars/comments/1b0r95s/singlepage_per_event_car_maintenance_log",
+      "passed": true,
+      "elapsedMs": 0.017,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 190,
+      "totalFairMax": 350,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-11",
+      "tier": "edge",
+      "title": "Unlisted Custom Bumper Bracket Fabrication & Welding",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/1tzidlk/why_do_these_obd_reader_products_have_such",
+      "passed": true,
+      "elapsedMs": 0.008,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 540,
+      "totalFairMax": 550,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-12",
+      "tier": "edge",
+      "title": "Astronomical $95 Shop Supplies Fee on Modest Brake Job",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/1v5sc2v/70_in_added_fees_for_oil_change_and_rear_brakes",
+      "passed": true,
+      "elapsedMs": 0.009,
+      "failures": [],
+      "actualStatus": "slightly_high",
+      "totalQuoted": 455,
+      "totalFairMax": 587,
+      "potentialSavings": 0,
+      "upsellCount": 1,
+      "upsellTitles": [
+        "Excessive Miscellaneous Shop Fee"
+      ]
+    },
+    {
+      "id": "CASE-13",
+      "tier": "negative",
+      "title": "Fair & Honest Independent Mom-and-Pop 100k Maintenance",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/m7dk6j/how_do_you_track_your_cars_maintenance",
+      "passed": true,
+      "elapsedMs": 0.006,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 364,
+      "totalFairMax": 574,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-14",
+      "tier": "adversarial",
+      "title": "Luxury European Dealership High Labor Rate ($220/hr)",
+      "source": "https://reddit.com/r/cars/comments/11b9kuo/why_does_reading_onboard_diagnostics_data_still",
+      "passed": true,
+      "elapsedMs": 0.004,
+      "failures": [],
+      "actualStatus": "fair",
+      "totalQuoted": 730,
+      "totalFairMax": 760,
+      "potentialSavings": 0,
+      "upsellCount": 0,
+      "upsellTitles": []
+    },
+    {
+      "id": "CASE-15",
+      "tier": "adversarial",
+      "title": "Power Steering Flush on Vehicle with Electric Power Steering (EPS)",
+      "source": "https://reddit.com/r/MechanicAdvice/comments/19aikss/am_i_being_ripped_off_service_quote",
+      "passed": true,
+      "elapsedMs": 0.005,
+      "failures": [],
+      "actualStatus": "overcharged",
+      "totalQuoted": 175,
+      "totalFairMax": 158,
+      "potentialSavings": 172,
+      "upsellCount": 1,
+      "upsellTitles": [
+        "Potential Non-Essential Upsell: Power Steering Fluid Flush"
+      ]
+    }
+  ]
+}
