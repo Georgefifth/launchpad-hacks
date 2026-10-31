@@ -1,0 +1,45 @@
+{
+  "projectName": "AutoFair — Automotive Repair Quote & Anti-Upsell Auditor",
+  "elevatorPitch": "An open, unbiased repair quote auditor that protects drivers from inflated mechanic labor hours, 300% parts markups, and predatory dealer chemical flushes.",
+  "deployedUrl": "https://georgefifth.github.io/launchpad-hacks/",
+  "githubRepoUrl": "https://github.com/Georgefifth/launchpad-hacks",
+  "demoVideoPath": "evidence/stage-4-demo/demo.mp4",
+  "thumbnailPath": "evidence/stage-5-submission/thumbnail.png",
+  "tags": [
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss",
+    "playwright",
+    "vitest",
+    "ffmpeg",
+    "edgetts",
+    "javascript",
+    "automotive",
+    "consumer-advocacy",
+    "open-source",
+    "data-visualization"
+  ],
+  "gallery": [
+    {
+      "image": "evidence/stage-5-submission/gallery/01-audit-dashboard.png",
+      "caption": "AutoFair Quote Audit Dashboard: Total quoted bill decomposed into standard book labor hours and wholesale parts fair market benchmarks."
+    },
+    {
+      "image": "evidence/stage-5-submission/gallery/02-real-world-presets.png",
+      "caption": "One-click presets loaded from authentic Reddit r/MechanicAdvice quote controversies, showing real dealer markups and fair shop baselines."
+    },
+    {
+      "image": "evidence/stage-5-submission/gallery/03-anti-upsell-radar.png",
+      "caption": "Anti-Upsell Radar flagging predatory dealership profit-center flushes that are not mandated by manufacturer factory maintenance schedules."
+    },
+    {
+      "image": "evidence/stage-5-submission/gallery/04-negotiation-scripts.png",
+      "caption": "One-click mechanic counter-negotiation scripts and DIY feasibility alternatives with tool lists and video tutorial links."
+    },
+    {
+      "image": "evidence/stage-5-submission/gallery/05-competitor-comparison.png",
+      "caption": "Unbiased comparison matrix demonstrating AutoFair's consumer advocacy advantages over ad-supported platforms like RepairPal and KBB."
+    }
+  ]
+}

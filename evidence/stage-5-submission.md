@@ -103,9 +103,8 @@ We learned that automotive maintenance asymmetry is rarely about parts being inh
 
 ## 5. "Try It Out" Links
 
+- **Deployed URL (GitHub Pages)**: [https://georgefifth.github.io/launchpad-hacks/](https://georgefifth.github.io/launchpad-hacks/)
 - **GitHub Repository**: [https://github.com/Georgefifth/launchpad-hacks](https://github.com/Georgefifth/launchpad-hacks)
-- **Live Demo (GitHub Pages)**: [https://georgefifth.github.io/launchpad-hacks/](https://georgefifth.github.io/launchpad-hacks/)
-- **Alternative Mirror (Vercel)**: [https://launchpad-hacks.vercel.app](https://launchpad-hacks.vercel.app)
 - **Demo Video File**: `evidence/stage-4-demo/demo.mp4` (1080p Full HD, 67.8s, narrated & captioned)
 
 ---
