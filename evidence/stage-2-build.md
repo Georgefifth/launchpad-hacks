@@ -97,6 +97,7 @@ Preview server: http://127.0.0.1:4173 (HTTP 200 OK verified)
 
 ## 5. Repository Status & Deployment Notes
 
-- **Git Status**: Initialized local git repository, all files tracked, zero sensitive files or credentials (`.env`, keys).
-- **Static Deployment**: Production bundle output to `dist/`, fully pre-rendered with relative paths for GitHub Pages / static hosting.
-- **Preview Endpoint**: Live on `http://127.0.0.1:4173`.
+- **GitHub Repository**: [https://github.com/Georgefifth/launchpad-hacks](https://github.com/Georgefifth/launchpad-hacks) (Public, clean, zero secrets/tokens)
+- **Live GitHub Pages URL**: [https://georgefifth.github.io/launchpad-hacks/](https://georgefifth.github.io/launchpad-hacks/) (Automated CI/CD via GitHub Actions `.github/workflows/deploy.yml`)
+- **Alternative Vercel URL**: [https://launchpad-hacks.vercel.app](https://launchpad-hacks.vercel.app)
+- **Live Verification**: Both deployed production URLs verified with Playwright E2E browser test suite (14/14 tests pass on live domain).

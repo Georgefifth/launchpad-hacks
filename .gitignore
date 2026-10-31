@@ -24,3 +24,4 @@ raw/
 *.njsproj
 *.sln
 *.sw?
+.vercel

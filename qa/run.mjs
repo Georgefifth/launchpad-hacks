@@ -60,7 +60,7 @@ const scenarios = [
     id: 'smoke-landing',
     title: 'Landing page renders with zero horizontal overflow and valid title',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
       await ctx.expectVisible('body');
       const title = await page.title();
       ctx.assert(title.includes('AutoFair'), `Unexpected title: ${title}`);
@@ -82,7 +82,7 @@ const scenarios = [
     id: 'preset-audit-switch',
     title: 'Switching Reddit benchmark quote presets dynamically updates audit metrics',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
 
       // Default preset is loaded: Dealer 60k service
       await ctx.expectText('Step 2 — AutoFair Quote Audit Report');
@@ -116,7 +116,7 @@ const scenarios = [
     id: 'line-item-builder',
     title: 'User adds a new repair line item, edits pricing, and observes reactive recalculation',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
 
       // Click "+ Custom unlisted service"
       const customToggle = page.getByText('+ Custom unlisted service').first();
@@ -140,7 +140,7 @@ const scenarios = [
     id: 'upsell-radar-negotiate',
     title: 'Anti-Upsell Radar flags predatory flushes and renders negotiation scripts',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
 
       // Load dealer 60k preset
       const dealerPreset = page.getByText(/The Dealership 60,000-Mile "Wallet Flush"/i).first();
@@ -161,7 +161,7 @@ const scenarios = [
     id: 'diy-alternatives',
     title: 'DIY Alternatives card displays savings, tools, and video tutorial link',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
 
       // Check DIY section
       await ctx.expectText('DIY Feasibility & Money-Saving Alternatives');
@@ -180,7 +180,7 @@ const scenarios = [
     id: 'competitor-modal',
     title: 'Competitor comparison modal opens and closes properly',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
 
       // Click "vs RepairPal / KBB" in header
       const compButton = page.getByRole('button', { name: /vs RepairPal \/ KBB/i }).first();
@@ -209,7 +209,7 @@ const scenarios = [
     id: 'reset-empty-state',
     title: 'Clear button resets quote to empty state with helpful guidance',
     async run(page, ctx) {
-      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      await page.goto('./', { waitUntil: 'domcontentloaded' });
 
       // Click Clear
       const clearBtn = page.getByRole('button', { name: /Clear/i }).first();

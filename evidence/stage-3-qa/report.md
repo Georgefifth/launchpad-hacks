@@ -1,7 +1,7 @@
 # QA Report — AutoFair
 
-- Date: 2026-10-31T05:51:45.258Z
-- Base URL: http://127.0.0.1:4173
+- Date: 2026-10-31T06:52:58.507Z
+- Base URL: https://launchpad-hacks.vercel.app
 - Browser: firefox (headless)
 - Total Tests: 14
 - Passed: 14
@@ -11,20 +11,20 @@
 
 | Viewport | Scenario ID | Status | Duration (ms) | Detail |
 |---|---|---|---|---|
-| desktop | smoke-landing | PASS | 453 | None |
-| desktop | preset-audit-switch | PASS | 542 | None |
-| desktop | line-item-builder | PASS | 457 | None |
-| desktop | upsell-radar-negotiate | PASS | 439 | None |
-| desktop | diy-alternatives | PASS | 336 | None |
-| desktop | competitor-modal | PASS | 976 | None |
-| desktop | reset-empty-state | PASS | 289 | None |
-| mobile | smoke-landing | PASS | 401 | None |
-| mobile | preset-audit-switch | PASS | 642 | None |
-| mobile | line-item-builder | PASS | 550 | None |
-| mobile | upsell-radar-negotiate | PASS | 458 | None |
-| mobile | diy-alternatives | PASS | 489 | None |
-| mobile | competitor-modal | PASS | 1175 | None |
-| mobile | reset-empty-state | PASS | 304 | None |
+| desktop | smoke-landing | PASS | 1298 | None |
+| desktop | preset-audit-switch | PASS | 644 | None |
+| desktop | line-item-builder | PASS | 866 | None |
+| desktop | upsell-radar-negotiate | PASS | 451 | None |
+| desktop | diy-alternatives | PASS | 385 | None |
+| desktop | competitor-modal | PASS | 995 | None |
+| desktop | reset-empty-state | PASS | 331 | None |
+| mobile | smoke-landing | PASS | 544 | None |
+| mobile | preset-audit-switch | PASS | 707 | None |
+| mobile | line-item-builder | PASS | 698 | None |
+| mobile | upsell-radar-negotiate | PASS | 538 | None |
+| mobile | diy-alternatives | PASS | 470 | None |
+| mobile | competitor-modal | PASS | 1225 | None |
+| mobile | reset-empty-state | PASS | 356 | None |
 
 ## Captured Screenshots
 
