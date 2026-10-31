@@ -1,0 +1,200 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "browser": "firefox",
+  "headed": false,
+  "startedAt": "2026-10-31T05:51:36.001Z",
+  "finishedAt": "2026-10-31T05:51:45.258Z",
+  "summary": {
+    "total": 14,
+    "pass": 14,
+    "fail": 0
+  },
+  "results": [
+    {
+      "viewport": "desktop",
+      "id": "smoke-landing",
+      "title": "Landing page renders with zero horizontal overflow and valid title",
+      "status": "pass",
+      "ms": 453,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-landing-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "preset-audit-switch",
+      "title": "Switching Reddit benchmark quote presets dynamically updates audit metrics",
+      "status": "pass",
+      "ms": 542,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/preset-audit-switch-brake-preset-loaded-desktop.png",
+        "evidence/stage-3-qa/screens/preset-audit-switch-honest-preset-loaded-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "line-item-builder",
+      "title": "User adds a new repair line item, edits pricing, and observes reactive recalculation",
+      "status": "pass",
+      "ms": 457,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/line-item-builder-custom-item-added-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "upsell-radar-negotiate",
+      "title": "Anti-Upsell Radar flags predatory flushes and renders negotiation scripts",
+      "status": "pass",
+      "ms": 439,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/upsell-radar-negotiate-upsell-and-negotiation-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "diy-alternatives",
+      "title": "DIY Alternatives card displays savings, tools, and video tutorial link",
+      "status": "pass",
+      "ms": 336,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/diy-alternatives-diy-alternatives-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "competitor-modal",
+      "title": "Competitor comparison modal opens and closes properly",
+      "status": "pass",
+      "ms": 976,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/competitor-modal-competitor-modal-open-desktop.png",
+        "evidence/stage-3-qa/screens/competitor-modal-competitor-modal-closed-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "reset-empty-state",
+      "title": "Clear button resets quote to empty state with helpful guidance",
+      "status": "pass",
+      "ms": 289,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/reset-empty-state-empty-state-desktop.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "smoke-landing",
+      "title": "Landing page renders with zero horizontal overflow and valid title",
+      "status": "pass",
+      "ms": 401,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-landing-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "preset-audit-switch",
+      "title": "Switching Reddit benchmark quote presets dynamically updates audit metrics",
+      "status": "pass",
+      "ms": 642,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/preset-audit-switch-brake-preset-loaded-mobile.png",
+        "evidence/stage-3-qa/screens/preset-audit-switch-honest-preset-loaded-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "line-item-builder",
+      "title": "User adds a new repair line item, edits pricing, and observes reactive recalculation",
+      "status": "pass",
+      "ms": 550,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/line-item-builder-custom-item-added-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "upsell-radar-negotiate",
+      "title": "Anti-Upsell Radar flags predatory flushes and renders negotiation scripts",
+      "status": "pass",
+      "ms": 458,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/upsell-radar-negotiate-upsell-and-negotiation-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "diy-alternatives",
+      "title": "DIY Alternatives card displays savings, tools, and video tutorial link",
+      "status": "pass",
+      "ms": 489,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/diy-alternatives-diy-alternatives-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "competitor-modal",
+      "title": "Competitor comparison modal opens and closes properly",
+      "status": "pass",
+      "ms": 1175,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/competitor-modal-competitor-modal-open-mobile.png",
+        "evidence/stage-3-qa/screens/competitor-modal-competitor-modal-closed-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "reset-empty-state",
+      "title": "Clear button resets quote to empty state with helpful guidance",
+      "status": "pass",
+      "ms": 304,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/reset-empty-state-empty-state-mobile.png"
+      ]
+    }
+  ]
+}

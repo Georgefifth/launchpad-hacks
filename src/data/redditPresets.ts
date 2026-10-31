@@ -143,9 +143,9 @@ export const REDDIT_PRESETS: QuotePreset[] = [
         quotedLaborPrice: 35,
       },
       {
-        serviceId: 'coolant_flush',
-        quotedPartsPrice: 32,
-        quotedLaborPrice: 100,
+        serviceId: 'serpentine_belt',
+        quotedPartsPrice: 35,
+        quotedLaborPrice: 60,
       },
     ],
     redditQuoteStory:

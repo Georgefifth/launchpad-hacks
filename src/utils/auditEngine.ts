@@ -192,7 +192,14 @@ export function auditQuote(
     statusLabel = 'Slightly Above Average Market Rate';
   }
 
-  const estimatedPotentialSavings = Math.max(0, totalQuoted - totalFairMax);
+  const upsellSavingsTotal = upsellFlags
+    .filter((f) => f.id !== 'shop_supplies_excessive')
+    .reduce((sum, f) => sum + f.quotedAmount, 0);
+
+  const estimatedPotentialSavings = Math.max(
+    0,
+    totalQuoted - totalFairMax
+  ) + upsellSavingsTotal;
 
   return {
     totalQuoted,

@@ -79,7 +79,11 @@ export const AuditSummary: React.FC<AuditSummaryProps> = ({
           <div className="flex items-center gap-2">
             <h3 className="text-base font-bold">{badge.title}</h3>
             <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-white/80 border border-current">
-              {audit.variancePercentage > 0 ? `+${audit.variancePercentage}% Markup` : 'On Benchmark'}
+              {audit.variancePercentage > 0
+                ? `+${audit.variancePercentage}% Markup`
+                : audit.upsellFlags.length > 0
+                ? `${audit.upsellFlags.length} Upsell Alerts`
+                : 'On Benchmark'}
             </span>
           </div>
           <p className="text-xs sm:text-sm mt-1 opacity-90 leading-relaxed">
