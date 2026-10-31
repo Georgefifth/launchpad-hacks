@@ -40,7 +40,7 @@ Add up to 25 tags. Only include the necessary ones.
 
 ### "Try it out" links
 
-Add links where people can try the project or see the code.
+Add links where people can try the project or see the code. (Deploy at github.io/vercel/render, and provide github repo url) 
 
 ### Image gallery
 
